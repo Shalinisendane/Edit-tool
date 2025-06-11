@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Subject Edit</title>
+  <link rel="stylesheet" href="subedit.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+  
+ <!-- Navbar -->
+ <header><nav class="navbar">
+            <div class="logo"> <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://ktbuniv.ac.in/">University Website</a></li>
+                
+                </ul></div>
+            <ul class="nav-links">
+              <li><a href="#">Ktbuadmin</a></li>
+                <li><a href="#">Sign out</a></li>
+                
+            </ul>
+        </nav>
+</header>
+
+<main>
+  <div class="logo-row">
+    <img src="image/KTBU_Logo_Final.png" alt="Left Logo" class="logo left-logo">
+    <img src="image/mpo_logo.png" alt="Right Logo" class="logo right-logo">
+  </div>
+  
+<!-- Main Form Container -->
+<div class="main-container">
+  <div class="card">
+    <h2>Subject Edit Tool</h2>
+    <form>
+      <label for="enrollment">Enrollment Number</label>
+      <!--<input type="text" id="enrollment" placeholder="Enter Enrollment No." required>-->
+      <input type="text" id="enrollment" name="enrollment" placeholder="Enter Enrollment No." 
+       pattern="\d{13}" maxlength="13" minlength="13" required 
+       title="Enrollment number must be exactly 13 digits">
+
+      <label for="current-subject">Current Subject</label>
+      <!---<input type="text" id="current-subject" placeholder="Current Subject" disabled value="Microbiology">-->
+<select id="new-subject" required>
+  <option value="">Select Subject</option>
+        <option value="Major">Major</option>
+         <option value="Minor">Minor</option>
+        <option value="Open Elective">Open Elective</option>
+        <option value="Vocatinal">Vocational</option>
+      </select>
+      <label for="new-subject">New Subject</label>
+      <select id="new-subject" required>
+        <option value="">Select New Subject</option>
+        <option value="Major">Major Combination</option>
+        <option value="Minor">Minor Combination</option>
+        <option value="Open elective">Open elective Combination</option>
+        <option value="Vocational">Vocational Combination</option>
+       
+      </select>
+
+      <div class="btn-group">
+        <button type="submit" class="btn edit">Edit Subject</button>
+        <button type="reset" class="btn cancel">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
+</main>
+<footer class="footer">
+  <a href="#navbar"> <p>Powered by &nbsp;<img src="image/footer2.png" alt="image"></p></a>
+</footer>
+
+</body>
+</html>

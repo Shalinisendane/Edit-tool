@@ -1,0 +1,174 @@
+ *{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ body{
+    margin: 0;
+    padding: 0;
+    /*box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+  }
+ /*body {
+    background:#bd7575;
+   }*/
+ 
+
+  /* Navbar Styling */
+  
+  header {
+    background-color: rgb(241, 186, 83);
+    
+   /* padding: 10px 15px;
+    border-radius: 10px 10px;*/
+    
+}
+.logo-row{
+  background-color:white ;
+  border-radius: 5px;
+  border-color: rgb(241, 186, 83);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color:rgb(221, 201, 165);
+}
+
+.logo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  
+}
+/*form*/
+  .tool{
+      
+      
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+   .form-container {
+      background:white ;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px rgb(255, 222, 161);
+      border-radius: 20px;
+      padding: 40px;
+      max-width: 800px;
+      width: 90%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .form-title {
+      width: 100%;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 600;
+      color:black;
+      margin-bottom: 10px;
+    }
+
+    .form-section1 {
+      justify-content: right;
+      flex: 1 1 45%;
+    }
+    .form-section2 {
+      justify-content: right;
+      flex: 1 1 45%;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color:black;
+    }
+
+    .form-group select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid black;
+      font-size: 15px;
+    }
+
+    .form-group select:focus {
+      border-color: black;
+      outline: none;
+    }
+
+    .submit-section {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .submit-btn {
+      padding: 12px 30px;
+      background-color:rgb(235, 167, 42);
+      color: white;
+      border: none;
+      font-size: 16px;
+      border-radius: 10px ;
+     
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .submit-btn:hover {
+      background-color: rgb(231, 217, 192);
+    }
+
+    @media (max-width: 768px) {
+      .form-section {
+        flex: 1 1 100%;
+      }
+    }
+  /*footer*/
+  footer {
+    background-color:rgb(241, 186, 83);
+    color: #fff;
+    text-align: center;
+    padding: 3px 3px;
+    border-radius: 10px 10px;
+}
+footer p {
+  color: white;
+
+}
+  .footer a{
+    text-decoration: none;
+  }
+    

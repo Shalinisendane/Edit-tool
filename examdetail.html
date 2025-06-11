@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exam Detail</title>
+  <link rel="stylesheet" href="examdetail.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+  
+ <!-- Navbar -->
+ <header><nav class="navbar">
+            <div class="logo"> <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://ktbuniv.ac.in/">University Website</a></li>
+                
+                </ul></div>
+            <ul class="nav-links">
+              <li><a href="#">Ktbuadmin</a></li>
+                <li><a href="#">Sign out</a></li>
+                
+            </ul>
+        </nav>
+</header>
+
+<main>
+  <div class="logo-row">
+    <img src="image/KTBU_Logo_Final.png" alt="Left Logo" class="logo left-logo">
+    <img src="image/mpo_logo.png" alt="Right Logo" class="logo right-logo">
+  </div> 
+  <section class="tool">
+  <form class="form-container">
+    <div class="form-title">Exam Detail</div>
+
+    <!-- Left Partition -->
+    <div class="form-section1">
+      <div class="form-group">
+        <label for="college">Select College</label>
+        <select id="college" name="college" required>
+          <option value="">Select College</option>
+          <option value="college1">ABC College</option>
+         
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="program">Select Program</label>
+        <select id="program" name="program" required>
+          <option value="">Select Program </option>
+          <option value="ug">Undergraduate (UG)</option>
+          <option value="pg">Postgraduate (PG)</option>
+          <option value="diploma">Diploma</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="branch">Select Branch</label>
+        <select id="branch" name="branch" required>
+          <option value=""> Selcet Branch</option>
+          
+        </select>
+      </div>
+    </div>
+
+    <!-- Right Partition -->
+    <div class="form-section2">
+      <div class="form-group">
+        <label for="semester">Semester/Year</label>
+        <select id="semester" name="semester" required>
+          <option value="">Select Semester/Year --</option>
+          
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="session">Select Session</label>
+        <select id="session" name="session" required>
+          <option value="">Select Session </option>
+         
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="status">Private or Regular</label>
+        <select id="status" name="status" required>
+          <option value="">Select</option>
+          <option value="regular">Regular</option>
+          <option value="private">Private</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="submit-section">
+      <button type="submit" class="submit-btn">Search</button>
+    </div>
+  </form>
+
+
+  </section>
+ </main> 
+
+
+<footer class="footer">
+  <a href="#navbar"> <p>Powered by &nbsp;<img src="image/footer2.png" alt="image"></p></a>
+</footer>
+
+</body>
+</html>

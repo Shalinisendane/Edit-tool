@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report</title>
+    <link rel="stylesheet" href="about.css">
+    <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+
+        header {
+            background-color: rgb(241, 186, 83);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        .logo-row {
+            background-color: white;
+            border-radius: 5px;
+            border-color: rgb(241, 186, 83);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            color: #fff;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-links li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+            transition: color 0.3s;
+        }
+
+        .nav-links li a:hover {
+            color: rgb(221, 201, 165);
+        }
+
+        .logo-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+
+        }
+
+
+        
+
+        /*tool*/
+        .form  {
+     
+     margin-top: 30px;
+    
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+
+       
+.form-container {
+      background: #ffffff;
+      padding: 30px;
+      height: 50%;
+      width: 50%;
+     /* max-width: 1000px;*/
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .form-title {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #000000;
+    }
+
+    .form-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .form-section {
+      flex: 1 1 45%;
+    }
+
+    .form-group {
+      margin-bottom: 10px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 5px;
+      color:black;
+    }
+
+    .form-group select {
+      width:80%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 2px solid #403636;
+      font-size: 14px;
+    }
+
+    .form-group select:focus {
+      border-color:rgb(227, 184, 105) ;
+     
+      outline: none;
+    }
+
+    .button-section {
+     margin-left: 12%;
+     text-align: center;
+      
+     
+    }
+
+    .button-section button {
+      background-color:rgb(227, 184, 105);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 15px;
+      margin: 0 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s black;
+    }
+
+    .button-section button:hover {
+      background-color:rgb(227, 184, 105);
+    }
+
+    @media (max-width: 768px) {
+      .form-content {
+        flex-direction: column;
+      }
+
+      .form-section {
+        flex: 1 1 100%;
+      }
+
+      .button-section {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+        
+        /*footer*/
+        footer {
+            margin-top: 5%;
+            background-color: rgb(241, 186, 83);
+            color: #fff;
+            text-align: center;
+            padding: 3px 3px;
+            border-radius: 10px 10px;
+            
+        }
+
+        footer p {
+            color: white;
+
+        }
+
+        .footer a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://ktbuniv.ac.in/">University Website</a></li>
+                </ul>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Ktbuadmin</a></li>
+                <li><a href="#">Sign out</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main class="tool">
+        <div class="logo-row">
+            <img src="image/KTBU_Logo_Final.png" alt="Left Logo" class="logo left-logo">
+            <img src="image/mpo_logo.png" alt="Right Logo" class="logo right-logo">
+        </div>
+        <div class="form">
+        <form class="form-container">
+    <div class="form-title">Examination Details (Center-Wise)</div>
+
+    <div class="form-content">
+
+      <!-- Left Partition -->
+      <div class="form-section">
+        <div class="form-group">
+          <label for="session">Session</label>
+          <select id="session" required>
+            <option value="">Select Session</option>
+            <option>2023-24</option>
+            <option>2024-25</option>
+            <option>2025-26</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="type">Private / Regular</label>
+          <select id="type" required>
+            <option value="">Select</option>
+            <option>Private</option>
+            <option>Regular</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="semester">Select Semester</label>
+          <select id="semester" required>
+            <option value="">Select Semester</option>
+            <option>1st</option>
+            <option>2nd</option>
+            <option>3rd</option>
+            <option>4th</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="college">Select College</label>
+          <select id="college" required>
+            <option value="">Select College</option>
+            <option>Govt PG College</option>
+            <option>ABC Institute</option>
+            <option>XYZ College</option>
+          </select>
+        </div>
+      </div>
+
+        
+
+        
+
+      <!-- Right Partition -->
+      <div class="form-section">
+         <div class="form-group">
+          <label for="course">Select Course</label>
+          <select id="course" required>
+            <option value="">Select Course</option>
+            <option>BA</option>
+            <option>BSc</option>
+            <option>BCom</option>
+            <option>MA</option>
+          </select>
+        </div>
+
+         <div class="form-group">
+          <label for="branch">Select Branch</label>
+          <select id="branch" required>
+            <option value="">Select Branch</option>
+            <option>Plain</option>
+            
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="status">Student Status</label>
+          <select id="status" required>
+            <option value="">Select Status</option>
+            
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="query">Select Query</label>
+          <select id="query" required>
+            <option value="">Select Query Type</option>
+            <option>Center Allocated</option>
+            <option>Blank Center</option>
+            <option>Center Allocated Count</option>
+          </select>
+        </div>
+      </div>
+    
+    <!-- Buttons -->
+    <div class="button-section">
+      <button type="button">View Report</button>
+      <button type="button">Export Report</button>
+      <button type="reset" style="background-color: rgb(229, 190, 116); color:white;">Cancel</button>
+    </div>
+
+  </form></div>
+</main>
+
+<footer class="footer">
+        <a href="#navbar">
+            <p>Powered by &nbsp;<img src="image/footer2.png" alt="image"></p>
+        </a>
+    </footer>
+    
+
+</body>
+
+</html>
